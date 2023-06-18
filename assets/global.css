@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-default {
+  @apply w-full p-4 text-sm rounded-lg focus-visible:!ring-2 d-input pe-12;
+}
+
+.page-width {
+  max-width: 1430px;
+  margin: auto;
+}
+.d-input {
+  height: 48px;
+  /* White */
+  background: #ffffff;
+  /* Slate/Light Alpha/8 */
+  border: 1px solid rgba(1, 30, 50, 0.24);
+  /* Tiny2 */
+  box-shadow: 0px 1px 2px rgba(104, 112, 118, 0.06),
+    0px 1px 3px rgba(104, 112, 118, 0.1);
+}
+
+.d-input:focus,
+.d-input:focus-visible {
+  outline: #0091ff auto 0px;
+  border-color: #0091ff;
+  background-color: #f5faff;
+}
+.imgs-bg {
+  border-right: 1px solid rgba(1, 30, 50, 0.24);
+  /* shadow-md */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn {
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(180deg, #6083f8 0%, #3e63dd 100%);
+  /* shadow-base */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  color: white;
+  border: 1px solid;
+  font-weight: 600;
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(32, 60, 152, 0.3) 0%,
+    #203c98 100%
+  );
+}
+
+@media all and (max-width: 768px) {
+  .mb-borders {
+    border-top: 1px solid rgba(1, 30, 50, 0.24);
+    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.06),
+      0px -2px 6px rgba(0, 0, 0, 0.1);
+  }
+  .mb-image-col {
+    background: radial-gradient(
+      65.37% 65.37% at 50% 11.83%,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(120, 147, 245, 0.6) 54.52%,
+      rgba(149, 243, 209, 0.3) 100%
+    );
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+  }
+}
+
+select[name^='dataTable_length'] {
+  @apply mt-1 w-16 rounded-md border-gray-300 text-base focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm !important;
+}
+
+input[aria-controls^='dataTable'] {
+  @apply rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm !important;
+}
+
+table[aria-describedby^='dataTable_info'] > tbody > tr {
+  @apply hover:bg-gray-200 !important;
+}
+
+table[aria-describedby^='dataTable_info'] > tbody > tr.even {
+  @apply bg-gray-100;
+}
+
+div.dataTables_length {
+  @apply m-2 ml-4;
+}
+
+div.dataTables_filter {
+  @apply m-2 mr-4;
+}
+
+div.dataTables_info {
+  @apply my-2 ml-4;
+}
+
+div.dataTables_paginate {
+  @apply isolate inline-flex -space-x-px rounded-md shadow-sm my-2 mr-4 !important;
+}
+
+div.dataTables_paginate > a {
+  @apply cursor-pointer !important;
+}
+
+div.dataTables_paginate > a.paginate_button.first {
+  @apply relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 !important;
+}
+
+div.dataTables_paginate > a.paginate_button.previous {
+  @apply relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 !important;
+}
+
+div.dataTables_paginate > span > a.paginate_button {
+  @apply relative ml-0 inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 !important;
+}
+
+div.dataTables_paginate > span > a.paginate_button.current {
+  /*@apply z-10 bg-blue-50 border-blue-500 text-blue-600 !important;*/
+}
+
+div.dataTables_paginate > a.paginate_button.next {
+  @apply relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 !important;
+}
+
+div.dataTables_paginate > a.paginate_button.last {
+  @apply relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 !important;
+}

@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 80",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.3.1",
+    "@sidebase/nuxt-auth": "^0.6.0-beta.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@vueuse/core": "^10.1.2",
+    "@vueuse/nuxt": "^10.1.2",
+    "nuxt": "^3.1.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
+    "@headlessui/vue": "^1.7.9",
+    "@heroicons/vue": "^2.0.18",
+    "@pinia/nuxt": "^0.4.8",
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/uuid": "^9.0.0",
+    "datatables.net-dt": "^1.13.2",
+    "datatables.net-vue3": "^2.0.0",
+    "jquery": "^3.6.3",
+    "keen-slider": "^6.8.5",
+    "pinia": "^2.0.35",
+    "preline": "^1.8.0",
+    "select2": "^4.1.0-rc.0",
+    "yup": "^1.1.1"
+  }
+}

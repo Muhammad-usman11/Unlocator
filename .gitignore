@@ -1,0 +1,10 @@
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+node_modules
+.idea
+.output.*
